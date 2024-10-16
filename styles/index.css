@@ -1,0 +1,42 @@
+
+#header{
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.100);
+  position: fixed;
+  width: 100%;
+
+  background-color: #fff;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container_header{
+  width: 100%;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+}
+
+.img_logo{
+  width: 160px;
+}
+
+.list_links_header{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.links a{
+  text-decoration: none;
+  font-size: 18px;
+  color: #5D5A88;
+
+  display: flex;
+}
