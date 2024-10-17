@@ -23,6 +23,23 @@
   padding: 0 20px;
 }
 
+.container_logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.logo-name{
+  font-size: 42px;
+  font-weight: bold;
+  color: #00408E;
+}
+
+.logo-description{
+  font-size: 10px;
+}
+
 .img_logo{
   width: 160px;
 }
@@ -39,4 +56,5 @@
   color: #5D5A88;
 
   display: flex;
+  gap: 5px;
 }
