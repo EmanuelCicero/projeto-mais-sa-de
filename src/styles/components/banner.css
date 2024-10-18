@@ -1,0 +1,43 @@
+#container_banner{
+  padding: 120px 20px 0 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text_banner{
+  font-size: 55px;
+}
+
+.image_banner{
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+@media screen and (max-width: 480px) {
+  #container_banner{
+    justify-content: center;
+  }
+
+  .text_banner{
+    font-size: 45px;
+  }
+
+  .image_banner{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .text_banner{
+    font-size: 45px;
+  }
+
+  .image_banner{
+    max-width: 400px;
+    max-height: 300px;
+  }
+  
+}
