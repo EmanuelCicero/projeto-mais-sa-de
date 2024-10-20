@@ -52,3 +52,47 @@
   display: flex;
   gap: 5px;
 }
+
+@media screen and (max-width: 1080px) {
+  .container_header{
+    padding: 0 10px;
+  }
+
+  .logo-name{
+    font-size: 32px;
+  }
+
+  .img_logo{
+    width: 140px;
+  }
+
+  .list_links_header{
+    gap: 20px;
+  }
+
+  .links a{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) { 
+  .container_header{
+    padding: 0 5px;
+  }
+
+  .logo-name{
+    font-size: 24px;
+  }
+
+  .img_logo{
+    width: 120px;
+  }
+
+  .list_links_header{
+    gap: 10px;
+  }
+
+  .links a{
+    font-size: 14px;
+  }
+}
