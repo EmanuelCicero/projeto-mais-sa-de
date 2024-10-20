@@ -80,3 +80,19 @@
   font-weight: 700;
   color: #555657;
 }
+
+@media screen and (max-width: 1080px) {
+  #data_content {
+    flex-direction: column;
+  }
+
+  .content_card {
+    flex: 0 1 calc(100% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content_card {
+    max-width: 100%;
+  }
+}
