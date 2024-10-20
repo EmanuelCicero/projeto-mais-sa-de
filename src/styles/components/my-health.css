@@ -1,0 +1,59 @@
+#container_my-health {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  padding: 40px 0;
+}
+
+.title_my-health {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.text_my-health {
+  font-size: 20px;
+}
+
+#data_my-health {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  gap: 60px;
+}
+
+.myHealth_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  gap: 16px;
+}
+
+.myHealth_image {
+  cursor: pointer;
+}
+
+.myHealth_name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1E58B6;
+  max-width: 170px;
+}
+
+@media screen and (max-width: 1080px) {
+  #data_my-health {
+    flex-direction: column;
+  }
+
+  .myHealth_card {
+    flex: 0 1 calc(100% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .myHealth_card {
+    flex: 0 1 calc(100% - 20px);
+  }
+}

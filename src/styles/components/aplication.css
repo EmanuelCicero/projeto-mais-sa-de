@@ -4,7 +4,7 @@
   padding-top: 50px;
 }
 
-#container_aplications {
+#container_aplication {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -12,12 +12,12 @@
   padding: 40px 0;
 }
 
-.title_aplications {
+.title_aplication {
   font-size: 32px;
   font-weight: 700;
 }
 
-.text_aplications {
+.text_aplication {
   font-size: 20px;
 }
 
