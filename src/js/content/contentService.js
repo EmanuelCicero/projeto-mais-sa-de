@@ -43,8 +43,10 @@ export default class ContentService {
     image.src = content.image;
     contentCard.appendChild(image);
 
-    contentCard.addEventListener('click', () => {
-      window.location.href = content.url;
+    contentCard.addEventListener('click', (event) => {
+      event.preventDefault();
+      const newTab = window.open(content.url, '_blank');
+      newTab.focus();
     });
 
     this.container.appendChild(contentCard);

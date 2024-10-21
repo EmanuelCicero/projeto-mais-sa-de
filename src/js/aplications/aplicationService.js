@@ -27,8 +27,10 @@ export default class AplicationService {
     const name = createElement('h2', AplicationService.CSS_CLASSES.name, aplication.name);
     aplicationCard.appendChild(name);
 
-    aplicationCard.addEventListener('click', () => {
-      window.location.href = aplication.url;
+    aplicationCard.addEventListener('click', (event) => {
+      event.preventDefault();
+      const newTab = window.open(aplication.url, '_blank');
+      newTab.focus();
     });
 
     this.container.appendChild(aplicationCard);

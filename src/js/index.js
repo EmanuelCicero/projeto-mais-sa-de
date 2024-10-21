@@ -6,6 +6,7 @@ import MyHealthService from "./my-health/myHealthService.js";
 import MyHealth from "./my-health/myHealth.js";
 import ContentService from "./content/contentService.js";
 import Content from "./content/content.js";
+import navbarScrollAdjust from "./utils/navbarScrollAdjust.js";
 
 const detailService = new DetailService('data_detail');
 for (const detail of Details) {

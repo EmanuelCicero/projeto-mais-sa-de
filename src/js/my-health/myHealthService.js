@@ -27,8 +27,10 @@ export default class MyHealthService {
     const name = createElement('h2', MyHealthService.CSS_CLASSES.name, myHealth.name);
     myHealthCard.appendChild(name);
 
-    myHealthCard.addEventListener('click', () => {
-      window.location.href = myHealth.url;
+    myHealthCard.addEventListener('click', (event) => {
+      event.preventDefault();
+      const newTab = window.open(myHealth.url, '_blank');
+      newTab.focus();
     });
 
     this.container.appendChild(myHealthCard);
