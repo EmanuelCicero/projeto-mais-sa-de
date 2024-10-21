@@ -1,0 +1,32 @@
+#footer {
+  background-color: #6AA2E7;
+}
+
+.container_footer {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 50px 0;
+}
+
+.social_media {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+}
+
+@media screen and (max-width: 1080px) {
+  .container_footer {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container_footer {
+    padding: 24px 0;
+  }
+}
